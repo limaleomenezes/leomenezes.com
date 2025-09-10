@@ -1,0 +1,29 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'leomenezes.com ⸫ Blog'
+
+author = 'Leonardo Menezes'
+copyright = 'Copyright © 2025, Leonardo Menezes.'
+
+theme = 'hugo-bearblog'
+
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+[permalinks]
+	blog = "/:slug/"
+	tags = "/blog/:slug"
+
+[params]
+	description = 'Leonardo Menezes personal website'
+	title = 'leomenezes.com ⸫ Blog'
+	hideMadeWithLine = true
+
+[markup]
+	[markup.highlight]
+		codeFences = true
+		lineNos = true
+		lineNumbersInTable = false
+		style = 'friendly'
+
