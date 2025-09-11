@@ -10,7 +10,7 @@ Here is content about computer programming, DevOps, and system administration. T
 
 About me. I use [GitHub](https://github.com/limaleomenezes) to maintain my projects. [LinkedIn](https://www.linkedin.com/in/limaleomenezes/) to connect with people. The page below tracks my ongoing progress.
 
-[Go to the origin post.](/blog/origin)
+[Go to the origin post.](/origin)
 
 ---
 
