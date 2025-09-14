@@ -34,6 +34,8 @@ Main topics to learn about:
 - Copy public key to remote server.
 - Configure public key authentication.
 
+References:
+
 - [ArchWiki Users and group](https://wiki.archlinux.org/title/Users_and_groups)
 - [ArchWiki OpenSSH](https://wiki.archlinux.org/title/OpenSSH)
 - [ArchWiki SCP and SFTP](https://wiki.archlinux.org/title/SCP_and_SFTP)
@@ -57,22 +59,27 @@ Debian Wiki, docker group can potentiolly increase vunaribilities.
 
 ## Nginx and Hugo
 
+For production, purpose the `nginx:stable-alpine` is one ideal docker
+image, mainly if having low storage limits. And remember to install
+Hugo.
+
 ```
 sudo docker pull nginx:stable-alpine
 ```
 
-Install Hugo.
-
-Running the website.
+My website setup process follows this simple steps. Clone the
+repository, start the submodules, build one time the website docker
+image, and start docker compose.
 
 ```
-# --- clone the repository
 git clone https://github.com/limaleomenezes/leomenezes.com
+cd ./leomenezes.com/
+
 git submodule init
 git submodule update --remote
 
-# --- docker
-cd ./leomenezes.com/
+hugo
+
 docker build -t leomenezes.com .
 docker compose up -d
 ```
