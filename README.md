@@ -79,7 +79,5 @@ git submodule init
 git submodule update --remote
 
 hugo
-
-docker build -t leomenezes.com .
 docker compose up -d
 ```
